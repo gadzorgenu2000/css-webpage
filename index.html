@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My CSS Webpage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+	  <ul class="topnav" id="dropdownClick">
+		<li class="topnav-right"><a  class="active" href="#home">Home</a></li>
+		<li class="topnav-right"><a href="#signup">Sign Up</a></li>
+		<li class="topnav-right"><a href="#signin">Sign In</a></li>
+		<li class="dropdownIcon"><a href="javascript:void(0);" 
+		 onclick="dropdownMenu()">&#9776;</a></li>		
+	</ul>
+  </nav>
+  <div class="container" id="section-1-gradient">
+	<div class="row">
+	  <div class="col-6 leftSide-col ">
+		<div>
+		  <h1 class="large">Welcome</h1>
+		</div>
+		<form>
+			<div>
+				<h2>Student ID</h2>
+				<input class="inputbox" name="studentid" type="text" 
+				placeholder="Student ID">
+				<h2>Password</h2>
+				<input class="inputbox" name="password" type="password" 
+				placeholder=" Password">
+			</div>
+		</form>
+	  </div>
+	</div>
+  </div>
+ <header>
+	 <h1 class="section2header">The standard of awesome</h1>
+ </header>
+  <div class="container">
+	<div class="row">
+		<div class="col-4">
+			 <div class="box">
+				 <div class="icon">
+					 <img src="./public/assets/ig_icon.PNG">
+				 </div>
+				 <label>Chat with us</label>
+				 <p>We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+					 We solve real life solutions with the help
+					 of our expert team. Contact us for the lifetime solutions to your unending problems.
+				 </p>
+				</div>
+		</div>
+		<div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="./public/assets/ig_icon.PNG">
+					</div>
+					<label>Learn to code</label>
+					<p>We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+						We solve real life solutions with the help
+						of our expert team. Contact us for the lifetime solutions to your unending problems.
+					</p>
+				   </div>
+		   </div>
+		   <div class="col-4">
+				<div class="box">
+					<div class="icon">
+						<img src="./public/assets/ig_icon.PNG">
+					</div>
+					<label>Build an empire</label>
+					<p>We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+						We solve real life solutions with the help
+						of our expert team. Contact us for the lifetime solutions to your unending problems.
+					</p>
+				   </div>
+		   </div>
+	</div>
+	<div class="row>">
+		<div class="col-12">
+			<button class="learnMore">Learn more</button>
+		</div>
+	</div>
+  </div>
+  <hr>
+  <div class="container">
+	  <div class="row">
+	  <div class="col-7">
+		  <article>
+			  <p>We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+					We solve real life solutions with the help
+					of our expert team. Contact us for the lifetime solutions to your unending problems.
+					We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+					We solve real life solutions with the help
+					of our expert team. Contact us for the lifetime solutions to your unending problems.
+					We are located at Tema Community 12 6th Street adjacent MNC District Hospital.
+					We solve real life solutions with the help
+					of our expert team. Contact us for the lifetime solutions to your unending problems.
+			  </p>
+		  </article>
+	  </div>
+	  <div class="col-5">
+		<div class="callIcon">
+		  <img src="./public/assets/call_icon.PNG">
+		</div>
+	</div>
+  </div>
+</div>
+
+<footer class="footsy">
+		<div class="row">
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>	
+			<div class="col-3 mobileStack">
+					<h1>Company</h1>
+					<ul>
+						<li>About</li>
+						<li>Blog</li>
+						<li>Careers</li>
+					</ul>
+				</div>			
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>			
+			<div class="col-3 mobileStack">
+				<h1>Company</h1>
+				<ul>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>					
+		</div>
+</footer>
+
+
+
+
+
+
+  <script>
+	  function dropdownMenu(){
+		let x = document.getElementById("dropdownClick");
+		if(x.className === "topnav"){
+			x.className += "responsive";
+			/* change topnav to topnav.responsive*/
+		}else{
+			x.className = "topnav";
+		}
+	  }
+  </script>
+</body>
+</html>

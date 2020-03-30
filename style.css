@@ -1,0 +1,266 @@
+/* defaults*/
+nav , header , footer{
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+}
+
+label{
+    font-size: 35px;
+    font-weight:600;
+}
+p{
+    font-size: 28px;
+    line-height: 1.2;
+
+}
+
+article{
+    font-size: 35px;
+    padding: 20px;
+
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom:  4%;
+
+}
+.row{
+    width: 100%;
+    display: flex;/**/
+    flex-wrap: wrap;/* all elements in the row are wrapped*/
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+}
+
+.col-1 { width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 { width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 { width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*The * sign is used to select every the elements available on the page */
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/*  nav  */
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #0000ff;
+}
+ul.topnav li a:hover{
+    background-color: #0000ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+
+
+/*###### Custom stlyes #####*/
+#section-1-gradient {
+    background: #076DFF;/* for browsers that donot support gradients*/
+    background: -webkit-linear-gradient(#076DFF,#65a5ff);/*for safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#076DFF,#65a5ff);/*for opera 11.1 to 12.0*/
+    background: -moz-linear-gradient(#076DFF,#65a5ff);/*for firefox 3.6 to 15*/
+    background: linear-gradient(#076DFF,#65a5ff);/* standard syntax*/
+
+
+}
+
+.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;/* the 36px is for the top padding, 24px for left side, 40px for the bottom and 24px for the right side*/
+    border-radius:7px ;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);/* The first 0 is for the horizontal lengthwhich specifies where to place the shadow under the element, second for vertical length, third for blur radius(add the shadow around the element), fourth four spread raduis which places a thin line around the element)*/
+}
+
+.callIcon img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 5px rgba(0,0,0,.15),
+    2px 2px 17px 2px rgba(0, 0, 0, 1);
+
+    /*-2px for the horizontal length , -2px for the vertical length, 20px for the blur and 2px for the spread...
+    In the rgba, 0 for the shadow, 0 for the background color, 0 for the box color and 0.15 for the opacity */
+    /*negative numbers pull the box left and up . Whilst positive numbers pull the box to the right and down*/
+}
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;/*15px for top padding and 60px for bottom*/
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.learnMore{
+    display: block;
+    margin: auto;
+}
+
+.icon{
+    width: 100%;
+}
+
+
+.leftSide-col{
+    margin-left: 30%;
+}
+
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+.section2header{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+form h2{
+    color: #fff;
+}
+
+
+
+ input{
+     font-size: 20px;
+     width: 300px;
+     min-width: 100px;
+     padding: 5px;/*padding adds space from within an element*/
+
+ }
+
+.footsy{
+     background-color: #666;
+     padding: 10%;
+ }
+.footsy h1{
+     color:#fff;
+     font-size: 35px;
+}
+.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+.footsy ul li{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Mobile*/
+@media screen and (max-width :680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .section2header{
+        font-size: 50px;
+    }
+    article{
+        font-size: 25px;
+    }
+
+    .col-4, .col-7, .col-5 {
+        width: 100%;
+        margin: 0;
+    }
+    .mobileStack{
+        width: 50%;
+        display: block;
+    }
+    .box{
+        padding: 5px;
+        display: block;
+    }
+    .callIcon{
+        margin: 10px;
+    }
+
+    .callIcon img{
+        width: 100%;
+        
+    }
+
+}
